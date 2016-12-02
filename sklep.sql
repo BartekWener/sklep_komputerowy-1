@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Czas generowania: 27 Lis 2016, 20:54
+-- Czas generowania: 02 Gru 2016, 23:55
 -- Wersja serwera: 10.1.16-MariaDB
 -- Wersja PHP: 7.0.9
 
@@ -48,6 +48,36 @@ INSERT INTO `karty` (`id_karty`, `procesor_graficzny`, `Typ`, `Pamięć`, `Cena`
 (6, 'Radeon', 'R5', 2048, 450, 5),
 (7, 'Radeon', 'R7', 2048, 850, 8),
 (8, 'Radeon', 'R9', 4096, 2000, 10);
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `monitory`
+--
+
+CREATE TABLE `monitory` (
+  `id` int(4) NOT NULL,
+  `marka` varchar(10) NOT NULL,
+  `ekran` int(4) NOT NULL,
+  `ocena` int(2) NOT NULL,
+  `cena` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Zrzut danych tabeli `monitory`
+--
+
+INSERT INTO `monitory` (`id`, `marka`, `ekran`, `ocena`, `cena`) VALUES
+(1, 'Samsung', 23, 8, 789),
+(2, 'Samsung', 21, 6, 698),
+(3, 'Panasonic', 22, 6, 489),
+(4, 'Panasonic', 19, 6, 548),
+(5, 'Asus', 21, 6, 563),
+(6, 'Asus', 23, 7, 902),
+(7, 'Asus', 22, 7, 900),
+(8, 'Sony', 19, 5, 326),
+(9, 'Sony', 25, 8, 789),
+(10, 'Sony', 20, 6, 352);
 
 -- --------------------------------------------------------
 
@@ -105,6 +135,36 @@ INSERT INTO `procesory` (`id_procesora`, `Producent`, `Linia`, `liczba_rdzeni`, 
 (9, 'AMD', 'A10-Series', 4, 3400, 399, 4),
 (10, 'AMD', ' Phenom II', 2, 3300, 120, 2);
 
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `zasilacze`
+--
+
+CREATE TABLE `zasilacze` (
+  `id` int(3) NOT NULL,
+  `Nazwa` varchar(10) NOT NULL,
+  `moc` int(10) NOT NULL,
+  `standard` text NOT NULL,
+  `cena` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Zrzut danych tabeli `zasilacze`
+--
+
+INSERT INTO `zasilacze` (`id`, `Nazwa`, `moc`, `standard`, `cena`) VALUES
+(1, 'Corsair', 600, 'ATX', 423),
+(2, 'MADECOM', 500, 'ATX', 350),
+(3, 'Corsair', 550, 'ATX', 369),
+(4, 'MADECOM', 450, 'ATX', 200),
+(5, 'MADECOM', 500, 'ATX', 230),
+(6, 'Corsair', 550, 'ATX', 255),
+(7, 'Corsair', 600, 'ATX', 500),
+(8, 'Corsair', 700, 'ATX', 523),
+(9, 'Corsair', 750, 'ATX', 654),
+(10, 'Corsair', 600, 'ATX', 583);
+
 --
 -- Indeksy dla zrzutów tabel
 --
@@ -114,6 +174,12 @@ INSERT INTO `procesory` (`id_procesora`, `Producent`, `Linia`, `liczba_rdzeni`, 
 --
 ALTER TABLE `karty`
   ADD PRIMARY KEY (`id_karty`);
+
+--
+-- Indexes for table `monitory`
+--
+ALTER TABLE `monitory`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `pamiec_ram`
@@ -128,6 +194,12 @@ ALTER TABLE `procesory`
   ADD PRIMARY KEY (`id_procesora`);
 
 --
+-- Indexes for table `zasilacze`
+--
+ALTER TABLE `zasilacze`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -136,6 +208,11 @@ ALTER TABLE `procesory`
 --
 ALTER TABLE `karty`
   MODIFY `id_karty` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT dla tabeli `monitory`
+--
+ALTER TABLE `monitory`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT dla tabeli `pamiec_ram`
 --
@@ -146,6 +223,11 @@ ALTER TABLE `pamiec_ram`
 --
 ALTER TABLE `procesory`
   MODIFY `id_procesora` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT dla tabeli `zasilacze`
+--
+ALTER TABLE `zasilacze`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
