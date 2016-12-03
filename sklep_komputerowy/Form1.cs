@@ -46,20 +46,22 @@ namespace sklep_komputerowy
                 {
 
                     polaczenie.Open();
-                    labelPolaczenieZBaza.Text = "Połączono z baza";
+                    //labelPolaczenieZBaza.Text = "Połączono z baza";
                    
                     MySqlCommand cmd = polaczenie.CreateCommand();
                     cmd.CommandText = "SELECT procesor_graficzny as 'Procesor Graficzny' FROM karty";
                     MySqlDataAdapter adap = new MySqlDataAdapter(cmd);
                     DataSet ds = new DataSet();
                     adap.Fill(ds);
-                    dataGridView1.DataSource = ds.Tables[0].DefaultView;
+                Form2 form2 = new Form2();
+                this.Hide();
+                form2.Show();
 
 
-                }
-                catch (System.Data.SqlClient.SqlException se)
+            }
+                catch (System.Data.SqlClient.SqlException)
                 {
-                    labelPolaczenieZBaza.Text = "Nie połączono z baza";
+                    //labelPolaczenieZBaza.Text = "Nie połączono z baza";
                     MessageBox.Show("BŁĄD ");
 
                 }
@@ -72,21 +74,19 @@ namespace sklep_komputerowy
                     }
                 }
 
+
             }
         
 
 
-        private void labelPolaczenieZBaza_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

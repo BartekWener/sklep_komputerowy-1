@@ -11,3 +11,4 @@ c:\users\z500\documents\visual studio 2015\Projects\sklep_komputerowy\sklep_komp
 c:\users\z500\documents\visual studio 2015\Projects\sklep_komputerowy\sklep_komputerowy\bin\Debug\MySql.Web.dll
 c:\users\z500\documents\visual studio 2015\Projects\sklep_komputerowy\sklep_komputerowy\bin\Debug\MySql.Web.xml
 c:\users\z500\documents\visual studio 2015\Projects\sklep_komputerowy\sklep_komputerowy\obj\Debug\sklep_komputerowy.Form1.resources
+C:\Users\Z500\Documents\Visual Studio 2015\Projects\sklep_komputerowy\sklep_komputerowy\obj\Debug\sklep_komputerowy.Form2.resources
