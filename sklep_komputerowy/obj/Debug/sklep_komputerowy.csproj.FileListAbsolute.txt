@@ -12,3 +12,17 @@ c:\users\z500\documents\visual studio 2015\Projects\sklep_komputerowy\sklep_komp
 c:\users\z500\documents\visual studio 2015\Projects\sklep_komputerowy\sklep_komputerowy\bin\Debug\MySql.Web.xml
 c:\users\z500\documents\visual studio 2015\Projects\sklep_komputerowy\sklep_komputerowy\obj\Debug\sklep_komputerowy.Form1.resources
 C:\Users\Z500\Documents\Visual Studio 2015\Projects\sklep_komputerowy\sklep_komputerowy\obj\Debug\sklep_komputerowy.Form2.resources
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\bin\Debug\sklep_komputerowy.exe.config
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\obj\Debug\sklep_komputerowy.exe
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\obj\Debug\sklep_komputerowy.pdb
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\bin\Debug\sklep_komputerowy.exe
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\bin\Debug\sklep_komputerowy.pdb
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\bin\Debug\MySql.Data.dll
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\bin\Debug\MySql.Web.dll
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\bin\Debug\MySql.Data.xml
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\bin\Debug\MySql.Web.xml
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\obj\Debug\sklep_komputerowy.csprojResolveAssemblyReference.cache
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\obj\Debug\sklep_komputerowy.Form1.resources
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\obj\Debug\sklep_komputerowy.Form2.resources
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\obj\Debug\sklep_komputerowy.Properties.Resources.resources
+C:\Users\Bartek\Documents\GitHub\sklep_komputerowy-1\sklep_komputerowy\obj\Debug\sklep_komputerowy.csproj.GenerateResource.Cache
