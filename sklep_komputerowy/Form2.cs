@@ -15,23 +15,14 @@ namespace sklep_komputerowy
         public Form2()
         {
             InitializeComponent();
-
+            
         }
-       
-               
-        
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form1 form1 = new Form1();
-            MessageBox.Show("Goodbye.");
-            this.Hide();
-            form1.Show();
-        }
+        
     }
 }
